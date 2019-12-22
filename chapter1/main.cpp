@@ -60,10 +60,22 @@ void Func3Test() {
     func3(name);    //数组退化到指针,输出char const*
 }
 
+void AutoTest() {
+    //auto的型别推导大部分情况下与模板型别推导一模一样，唯有一处不同
+    auto x = {1,2,3,4};
+    cout << __FUNCTION__ << " param type: " << type_id_with_cvr<decltype (x)>().pretty_name() << endl;
+    //输出:std::initializer_list<int>
+    //auto会假定大括号初始化表达式代表一个std::inittializer<T>,而模板型别推导却不会
+}
+
 int main()
 {
+    //模板型别推导
     Func1Test();
     Func2Test();
     Func3Test();
+
+    //auto型别推导
+    AutoTest();
     return 0;
 }
