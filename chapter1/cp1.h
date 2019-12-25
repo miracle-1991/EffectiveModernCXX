@@ -29,4 +29,10 @@ void func3(T param) {
     cout << __FUNCTION__ << " param type: " << type_id_with_cvr<decltype (param)>().pretty_name() << endl;
 }
 
+//decltype推到函数的返回值型别
+template <typename Container, typename Index>
+auto GetItem(Container& c, Index i) -> decltype(c[i]) {
+    return c[i];
+}
+
 #endif // CP1_H
