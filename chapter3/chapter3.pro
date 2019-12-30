@@ -6,4 +6,5 @@ CONFIG -= qt
 SOURCES += main.cpp
 
 HEADERS += \
-    omnipotentbraces.h
+    omnipotentbraces.h \
+    nullandnullptr.h
