@@ -7,4 +7,5 @@ SOURCES += main.cpp
 
 HEADERS += \
     omnipotentbraces.h \
-    nullandnullptr.h
+    nullandnullptr.h \
+    prefer_using_over_typedef.h
