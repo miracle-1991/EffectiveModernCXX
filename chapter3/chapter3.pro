@@ -8,4 +8,5 @@ SOURCES += main.cpp
 HEADERS += \
     omnipotentbraces.h \
     nullandnullptr.h \
-    prefer_using_over_typedef.h
+    prefer_using_over_typedef.h \
+    using_enum_class.h
