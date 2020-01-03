@@ -9,4 +9,5 @@ HEADERS += \
     omnipotentbraces.h \
     nullandnullptr.h \
     prefer_using_over_typedef.h \
-    using_enum_class.h
+    using_enum_class.h \
+    using_delete_not_prive.h
