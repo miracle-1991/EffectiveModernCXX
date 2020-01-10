@@ -4,6 +4,7 @@
 #include "prefer_using_over_typedef.h"
 #include "using_enum_class.h"
 #include "using_delete_not_prive.h"
+#include "using_override.h"
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -13,5 +14,6 @@ int main(int argc, char *argv[])
     UsingTest();
     EnumClassTest();
     DeleteTest();
+    OverrideTest();
     return 0;
 }
