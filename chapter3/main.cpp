@@ -5,6 +5,7 @@
 #include "using_enum_class.h"
 #include "using_delete_not_prive.h"
 #include "using_override.h"
+#include "using_constexpr.h"
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -15,5 +16,6 @@ int main(int argc, char *argv[])
     EnumClassTest();
     DeleteTest();
     OverrideTest();
+    ConstExprText();
     return 0;
 }
